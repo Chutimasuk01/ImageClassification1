@@ -25,7 +25,7 @@ st.header('กรุณาอัพโหลดภาพเอ็กซเรย
 file = st.file_uploader('', type=['jpeg', 'jpg', 'png'])
 
 # load classifier
-Model = load_model('./model/pneumonia_classifier.h5')
+model = load_model('./model/pneumonia_classifier.h5')
 
 # load class names
 with open('./model/labels.txt', 'r') as f:
